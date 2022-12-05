@@ -27,9 +27,6 @@ console.log(distanceCost);
 
 //applico una condizionale che definira' il costo del biglietto se l'individuo e' minorenne
 
-const textVar = ("il costo del biglietto sara' di")
-const euroVar = ("€")
-
 if (age < 18) {
     const minorAge= (distanceCost * 0.2).toFixed(2);
     console.log(minorAge);
@@ -42,4 +39,3 @@ if (age < 18) {
      console.log(overAge);
  }
 
- 
