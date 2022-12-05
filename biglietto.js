@@ -29,13 +29,19 @@ console.log(distanceCost);
 
 if (age < 18) {
     const minorAge= (distanceCost * 0.2).toFixed(2);
-    console.log(minorAge);
+    const targetElement = document.getElementById('target');
+    targetElement.innerText = ("il prezzo e' di " + minorAge + "€")
+    console.log("il prezzo e' di " + minorAge + "€");
  }
  
  //applico una condizionale che definira' il costo del biglietto se l'individuo e' over 65 anni
  
  if (age > 65) {
      const overAge= (distanceCost * 0.4 ).toFixed(2);
-     console.log(overAge);
+     const targetElement = document.getElementById('target');
+     targetElement.innerText = ("il prezzo e' di " + overAge + "€")
+     console.log("il prezzo e' di " + overAge + "€");
  }
+
+
 
